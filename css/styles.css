@@ -1328,12 +1328,12 @@ background: #223b61;
 
 #footer {
   position:relative;
-  color:#8c8e90;
+  color:#fff;
   font-size:14px;
   line-height:22px;
   padding:30px 41px 20px 41px;
-  background:#333333;
-  border-bottom:2px solid #060606;
+  background:#1b3d70;
+  border-bottom:2px solid #1b3d70;
   overflow:hidden;  
 }
 
@@ -1418,7 +1418,7 @@ background: #223b61;
 	transition:all 0.2s ease;
 	cursor:pointer;
   border:0px !important;
-  margin-right:6px;
+  margin-right:6px;#1b3d#1b3d7070
 }
 
 .sn2 {
@@ -1589,4 +1589,8 @@ h1,h2,h3,h4,h5,h6{
 #our-team-image{
   height: 20vh;
   width: 15vw;
+}
+
+#footer-icons{
+  color: #fff;
 }
