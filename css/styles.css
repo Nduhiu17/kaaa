@@ -22,8 +22,8 @@ html {
 
 body {
 	margin: 0;
-	padding: 0;                      
-  font-family:Roboto;
+	padding: 0;
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	color: #3b3b3b;
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   position:relative;
   font-weight: 200;
   line-height: 1.25;
-  color: #3b3b3b;
+  color: #4362A5;
   margin:0px;
   padding: 20px 0;
   clear:both;
@@ -200,10 +200,12 @@ img {
 
 .left {
   text-align:left;
+	color: #ffffff;
 }
 
 .right {
   text-align:right;
+	color: #ffffff;
 }
 
 .f-left {
@@ -218,7 +220,7 @@ img {
   text-align: center; }
   
 .f-hr{
-  border-bottom:1px solid #CCC;
+  border-bottom:1px solid red;
   padding:10px;
   width:50%;
   margin:0 auto;
@@ -316,7 +318,7 @@ header {
 				}
 				#nav li a:active
 				{
-					background-color: #c00 !important;
+					background-color: #F9B040 !important;
 				}
 
 			#nav span:after
@@ -337,7 +339,7 @@ header {
 
 			#nav > ul
 			{
-				background-color: #1b3d70;
+				background-color: #1C6F47;
 			}
 				#nav > ul > li
 				{
@@ -354,12 +356,12 @@ header {
 					}
 						#nav > ul > li:not( :last-child ) > a
 						{
-							border-right: 1px solid #1b3d70;
+							border-right: 1px solid #1C6F47;
 						}
 						#nav > ul > li:hover > a,
 						#nav > ul:not( :hover ) > li.active > a
 						{
-							background-color: #1b3d70;
+							background-color: #1C6F47;
 						}
 
 
@@ -367,7 +369,7 @@ header {
 
 				#nav li ul
 				{
-					background-color: #1b3d70;
+					background-color: #1C6F47;
 					display: none;
 					position: absolute;
 					top: 100%;
@@ -769,11 +771,11 @@ header {
 }
  
 .accordion-heading {
-  color:#393838;
-  background:#e9edeb; 
+  color:#fff;
+  background:#F9B040;
 }
 .accordion-heading a{
-  color:#393838;
+  color:#fff;
 }
 .accordion-inner {
   color:#393838;
@@ -1247,19 +1249,18 @@ table a:hover{
     margin:0px;
     border:0px;
   	color:#fff;
-	background: #fda056;
+	background: #F9B040;
   }
  
   #portfolio-filter li:hover a {
     color:#fff;
-    background: #83adff;
+    background: #F9B040;
     text-decoration:none;
   }
     
   #portfolio-filter li.active a {
     color:#fff;
-
-background: #223b61;
+	  background: #1C6F47;
   }
 
 	/* --------------------------------------------------------	*/
@@ -1312,7 +1313,10 @@ background: #223b61;
 	}                                      
 /*----------------------------------------------------------*/
 /* breadcrumbs */
-#titlebar{background:#f9f9f9;}
+#titlebar{
+	background: #F9B040;
+}
+
 #breadcrumbs ul{float:right;font-size:13px;margin-top:27px;font-weight:500; padding-left:5px; padding-right:15px;}
 #breadcrumbs ul li{display:inline-block;color:#999;margin:0 0 0 5px}
 #breadcrumbs ul li:after{content:"";font-family:"FontAwesome";font-size:12px;color:#ccc;margin:0 0 0 9px}
@@ -1332,9 +1336,8 @@ background: #223b61;
   font-size:14px;
   line-height:22px;
   padding:30px 41px 20px 41px;
-  background:#1b3d70;
-  border-bottom:2px solid #1b3d70;
-  overflow:hidden;  
+  background:#1C6F47;
+  border-bottom:2px solid #1C6F47;
 }
 
 #footer h2 {
@@ -1418,11 +1421,11 @@ background: #223b61;
 	transition:all 0.2s ease;
 	cursor:pointer;
   border:0px !important;
-  margin-right:6px;#1b3d#1b3d7070
+  margin-right:6px;
 }
 
 .sn2 {
-	background: url(../img/social-networks-2.png) no-repeat top left; 
+	/*background: url(../img/social-networks-2.png) no-repeat top left; */
 }
 
 /* Normal */
@@ -1550,7 +1553,7 @@ nav#nav{
 }
 
 #who-we-are{
-  color: #060606;
+  color: #F9B040;
 }
 
 #image-a-dream{
@@ -1593,4 +1596,64 @@ h1,h2,h3,h4,h5,h6{
 
 #footer-icons{
   color: #fff;
+}
+
+.icon-lightbulb:before {
+	color: #F9B040;
+}
+
+.icon-resize-small:before {
+	color: #F9B040;
+}
+
+.icon-eye-open:before {
+	color: #F9B040;
+}
+
+#f{
+	color: #ffffff;
+}
+.toggle-text{
+	color: black;
+}
+
+.icon-ok:before {
+	color: #F9B040;
+}
+
+.external{
+
+}
+
+@media (max-width: 767px){
+	.external {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	#events-image {
+		height: 39vh;
+	}
+
+	#our-team-image {
+		height: 46vh;
+		width: 100%;
+	}
+
+	#footer{
+		margin-top: 20px;
+	}
+}
+
+
+.calendar-wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.mission-vission-wrapper{
+	display: flex;
+	flex-direction: column;
 }

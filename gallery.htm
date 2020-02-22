@@ -1,13 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="not-ie" lang="en"> <!--<![endif]-->
 <head>
 	<!-- Basic Meta Tags -->
   <meta charset="utf-8">
   <title>KAAA | ACTIVITIES</title>
-	<meta name="keywords" content="ucorpora, ucorpora gallery, free, template, corporate, clean, modern, bootstrap, creative, design">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--[if (gte IE 9)|!(IE)]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +15,9 @@
   <!-- Styles -->
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/bootstrap-override.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i|Oswald&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
   <!-- Font Avesome Styles -->
   <link href="css/font-awesome/font-awesome.css" rel="stylesheet">
@@ -96,10 +94,10 @@
 
       <div class="row">
         <div class="span12">
-          <h4>Our photo gallery</h4>
-          <p>Ucorpora photo gallery page ut molestie turpis, elementum tempor metus. Vestibulum non nibh porttitor, eleifend purus eu, pulvinar orci. Quisque a gravida lorem, eu lobortis magna. Nulla auctor urna quis facilisis pretium. Cras facilisis risus sed mauris gravida, id vestibulum erat dictum. Nam in ante massa. Integer ultricies libero lorem, egestas dictum augue aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</p>
+          <h4 class="gallery-title">Our photo gallery</h4>
+          <p class="p-gallery">Ucorpora photo gallery page ut molestie turpis, elementum tempor metus. Vestibulum non nibh porttitor, eleifend purus eu, pulvinar orci. Quisque a gravida lorem, eu lobortis magna. Nulla auctor urna quis facilisis pretium. Cras facilisis risus sed mauris gravida, id vestibulum erat dictum. Nam in ante massa. Integer ultricies libero lorem, egestas dictum augue aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis.</p>
 
-<p>Elementum tempor metus donec ut molestie turpis. Vestibulum non nibh porttitor, eleifend purus eu, pulvinar orci. Quisque a gravida lorem, eu lobortis magna. Nulla auctor urna quis facilisis pretium. Cras facilisis risus sed mauris gravida, id vestibulum erat dictum. Nam in ante massa. Integer ultricies libero lorem.</p>   
+<p class="p-gallery">Elementum tempor metus donec ut molestie turpis. Vestibulum non nibh porttitor, eleifend purus eu, pulvinar orci. Quisque a gravida lorem, eu lobortis magna. Nulla auctor urna quis facilisis pretium. Cras facilisis risus sed mauris gravida, id vestibulum erat dictum. Nam in ante massa. Integer ultricies libero lorem.</p>
 
       <div class="row">
         <div class="span12">  
@@ -310,9 +308,11 @@
       <div class="row">
         <div class="span6">
           <div class="logo-footer">
-            <a href="#" class="social-network sn2 facebook" id="footer-icons"></a>
-            <a href="#" class="social-network sn2 twitter" id="footer-icons"></a>
-            <a href="#" class="social-network sn2 instagram" id="footer-icons"></a>
+            <i class="fab fa-500px"></i>
+            <a href="https://www.facebook.com/groups/47526720196/?epa=SEARCH_BOX" class="social-network sn24 facebook" id="footer-icons" target="_blank"></a>
+            <a href="https://twitter.com/KenAusAluAsc" class="social-network sn24 twitter" id="footer-icons" target="_blank"></a>
+            <a href="https://www.instagram.com/kaaa_kenya/" class="social-network sn24 instgram" id="footer-icons" target="_blank"></a>
+            <a href="https://www.linkedin.com/company/kenyan-australian-alumni-association/about/" class="social-network sn24 linkedin" id="footer-icons" target="_blank"></a>
           </div>
         </div>
         <div class="span6 right">
@@ -329,6 +329,25 @@
   <script type="text/javascript" src="js/functions.js"></script>
   <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
   <script type="text/javascript" defer src="js/jquery.flexslider.js"></script>
+
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('#titlebar', {
+      duration: 3000,
+      origin:'bottom'
+    });
+    sr.reveal('.gallery-title', {
+      duration: 2000,
+      origin:'top',
+      distance:'150px'
+    });
+
+    sr.reveal('.p-gallery', {
+      duration: 3000,
+      origin:'bottom',
+      // distance:'300px'
+    })
+    </script>
 
 </body>
 </html>
