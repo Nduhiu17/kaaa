@@ -31,6 +31,7 @@ body {
 	-webkit-text-size-adjust: 100%;	
 	cursor:default;
   background:#fff;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1538,7 +1539,7 @@ table a:hover{
 .social-network.zerply:hover,.active .social-network.zerply{ background-position: -1152px -24px}
 
 .logo-image{
-  height: 20vh;
+  /*height: 20vh;*/
 }
 
 .slider-image{
@@ -1705,5 +1706,12 @@ h1,h2,h3,h4,h5,h6{
 
 	40%, 60% {
 		transform: translate3d(4px, 0, 0);
+	}
+}
+
+@media (max-width: 669px){
+	.logo-image{
+		margin-left: 50%;
+		margin-right: 50%;
 	}
 }
