@@ -1715,3 +1715,17 @@ h1,h2,h3,h4,h5,h6{
 		margin-right: 50%;
 	}
 }
+
+.partners{
+  display: flex;
+  flex-direction: row;
+}
+
+.partners > div{
+  width: 30%;
+}
+
+.partners-heading{
+  display: flex;
+  justify-content: center;
+}

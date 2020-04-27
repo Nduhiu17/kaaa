@@ -52,7 +52,8 @@
 	           	<li class="active"><a href="index.htm" title="">Home</a></li>
                 <li><a href="about-us.htm" title="">About Us</a></li>                
                 <li><a href="gallery.htm" title="">Gallery</a></li>
-                <li><a href="services.htm" title="">Activities</a></li>
+                <li><a href="activities.html" title="">Activities</a></li>
+                <li><a href="partners.html" title="">Partners</a></li>
 	           </ul>
           </nav>
          </div> 
@@ -191,6 +192,7 @@
               <li><a href="#tab4" data-toggle="tab">Associate Member</a></li>
               <li><a href="#tab2" data-toggle="tab">Corporate Member</a></li>
               <li><a href="#tab3" data-toggle="tab">Honorary Member</a></li>
+              <li><a href="#tab5" data-toggle="tab">Prescribed Fee</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane active" id="tab1">
@@ -200,6 +202,20 @@
               <div class="tab-pane" id="tab4">
                 <h4>Associate Member</h4>
                 <p>A person qualifies to be an honorary member if that person has been granted membership by the committee, in recognition of their past, present or affirmed contribution to the Association.</p>
+              </div>
+              <div class="tab-pane" id="tab5">
+<!--                <h4>Prescribed fee</h4>-->
+                <p>Every member shall pay a one off membership fee (includes annual fee for the first year) and an annual subscription fee not later than the last Friday or working day of February each subsequent year as follows:
+                <ul class="list-bs">
+                  <!-- List Items -->
+                  <li><i class="icon-ok"></i> Full Member: 		KShs. 3,000/=		KShs. 2,000/=.</li>
+                  <li><i class="icon-ok"></i>Associate Member:  	KShs. 1,500/=		KShs. 1,000/=.</i>
+                  </li>
+                  <li><i class="icon-ok"></i> Corporate Member: 					KShs. 20,000/=.</li>
+                  </li>
+                </ul>
+                </p>
+
               </div>
               <div class="tab-pane" id="tab2">
                 <h4>Corporate Member</h4>
@@ -253,6 +269,18 @@
   <script type="text/javascript" defer src="js/jquery.flexslider.js"></script>
     <script>
       window.sr = ScrollReveal();
+
+      sr.reveal('.logo-image', {
+        duration: 3000,
+        origin:'bottom'
+      });
+
+      sr.reveal('.span9', {
+        duration: 2000,
+        origin:'top',
+        distance:'300px'
+      });
+
       sr.reveal('#titlebar', {
         duration: 3000,
         origin:'bottom'
